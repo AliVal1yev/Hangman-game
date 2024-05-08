@@ -25,7 +25,7 @@ sep_word = list(word)
 masked_word = ["_" for _ in word] 
 masked_word[random_index] = word[random_index]
 
-CHANCES = 5
+CHANCES = 3
 RED_PREFIX = "\033[41m"
 GREEN_PREFIX = "\033[42m"
 COLOR_SUFFIX = "\033[0m"
@@ -71,7 +71,7 @@ death_road = {
 
 while CHANCES > 0:
     os.system("cls")
-    #print(death_road[CHANCES])
+    print(death_road[CHANCES])
     print(f"Category is '{category}'. You have {CHANCES} chances. Good luck!")
     print("".join(masked_word))
     for letter in letters:
