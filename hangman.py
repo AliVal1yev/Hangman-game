@@ -72,7 +72,7 @@ while CHANCES > 0:
                 masked_word[idx] = let
                 sep_word[idx] = "*"
             except ValueError:
-                input("sen uje bu herfi tapmisan, bawqasini yaz")
+                input("You already input this letter. Try another one. :))")
                 continue
         print("".join(masked_word))
     else:
@@ -80,6 +80,6 @@ while CHANCES > 0:
     guessed = all([ch=="*" for ch in sep_word])
 
     if guessed:
-        exit("Mashallah, sene halaldi :DD <3")
+        exit("Perfect. You find the missing word.!!!")
 
 print(word)
