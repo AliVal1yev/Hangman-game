@@ -104,6 +104,6 @@ while CHANCES > 0:
     guessed = all([ch=="*" for ch in sep_word])
 
     if guessed:
-        exit("Perfect. You find the missing word.!!!")
+        exit("Perfect. You find the invisible word.!!!")
 
 print(word)
